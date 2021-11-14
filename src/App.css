@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    background-image: linear-gradient(120deg, #f665f6 0%, #ad0aa0 100%);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+}
+header{
+    font-size: 2rem;
+}
+header ,form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 20vh;
+}
+form input , form button{
+    border: none;
+    font-size: 2rem;
+    padding: 0.5rem;
+  
+}
+form button{
+  background: #EE82EE;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+form button:hover{
+    background-color: #e015e0;
+}
+.todo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.todo-list{
+    list-style: none;
+    min-width: 30%;
+}
+.todo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.5rem;
+    font-size: 1.5rem;
+    transition: all 1s ease;
+    background: white;
+    color: black;
+}
+.todo-item{
+    padding: 0rem 0.5rem;
+}
+.todo li{
+    flex: 1;
+}
+.complete-btn , .trash-btn{
+    border: none;
+    background: #f180f1;
+    color: white;
+    font-size: 1rem;
+    padding: 1rem;
+    cursor: pointer;
+}
+.trash-btn{
+    background-color: #87CEEB;
+}
+.trash-btn:hover{
+    background: #0497d1;
+}
+.complete-btn:hover{
+    background: #db1ddb;
+}
+.completed{
+    text-decoration: line-through;
+    opacity: 0.3;
+}
+select{
+    -ms-appearance:none ;
+    -moz-appearance:none ;
+    -webkit-appearance:none ;
+    appearance:none ;
+    background-image: none;
+    outline: 0;
+    border: 0 !important;
+    box-shadow: none;
+
+}
+.select{
+    overflow: hidden;
+    margin: 1rem;
+    position: relative;
+}
+select{
+    color: violet;
+    padding: 1rem;
+    width: 12rem;
+}
+.select::after{
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    content: "\25BC";
+     background: rgb(223, 88, 223);
+    position: absolute;
+    padding: 1rem;
+    pointer-events: none;
+}
